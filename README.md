@@ -461,3 +461,26 @@ AWS services and resources can be accessed by using the **AWS Management Console
    
 2. **Compliance and Auditing:**
    - Provides logs for governance, regulatory, and operational auditing.
+
+### 3(a) Responsibilities in the Shared Responsibility Model
+
+| **AWS Responsibilities** (Security **OF** the Cloud) | **Customer Responsibilities** (Security **IN** the Cloud) |
+|------------------------------------------|------------------------------------------|
+| 1. Physical security of data centers | 1. Configuring security groups and network ACLs |
+| 2. Managing and patching the AWS infrastructure | 2. Managing IAM users, roles, and permissions |
+| 3. Ensuring network security (DDoS protection, firewalls) | 3. Enabling Multi-Factor Authentication (MFA) for users |
+| 4. Providing encryption options for data at rest and in transit | 4. Monitoring and logging using AWS CloudTrail and AWS Config |
+
+### 3(b) Best Practices to Secure an AWS Account
+
+1. **Enable Multi-Factor Authentication (MFA):**
+   - Adds an extra layer of security for AWS account sign-ins.
+
+2. **Use IAM Roles and Least Privilege Access:**
+   - Grant only necessary permissions to users and applications.
+
+3. **Enable AWS CloudTrail and AWS Config:**
+   - Monitor API activities and track resource changes.
+
+4. **Regularly Rotate Access Keys and Credentials:**
+   - Avoid using long-term credentials and implement automatic key rotation.
