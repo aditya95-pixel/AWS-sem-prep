@@ -1,4 +1,4 @@
-# AWS-sem-prep
+# AWS Semester preparation
 
 ## Mod 2
 ### 1(a) What is Server Consolidation?
