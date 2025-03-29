@@ -559,3 +559,28 @@ A managed service means AWS handles administrative tasks like provisioning, patc
 | Direction of Traffic | Both inbound and outbound traffic | Only outbound traffic (no inbound connections) |
 | Public IP Required? | Yes, for instances using it | No, instances remain private |
 | Use Case | Connects public-facing applications to the internet | Allows private instances to download updates without being exposed |
+
+### 7(a) Security Groups and Network Access Control Lists (NACLs)
+
+#### **How Security Groups Work:**
+- Security groups act as **virtual firewalls** for EC2 instances.
+- They control **inbound and outbound traffic** at the instance level.
+- Rules can allow or deny traffic based on **protocols, IP ranges, and port numbers**.
+- Security groups are **stateful**, meaning if a request is allowed in, the response is automatically allowed out.
+
+#### **What is a Network Access Control List (NACL)?**
+- A **NACL** is an optional security layer that acts as a **firewall at the subnet level**.
+- It controls traffic entering and leaving subnets.
+- NACLs are **stateless**, meaning both inbound and outbound rules must be explicitly defined.
+- They process rules **in order**, from lowest to highest number.
+
+### 7(b) Three Ways Amazon Route 53 Improves Application Availability
+1. **DNS Failover:** Automatically routes traffic to a healthy endpoint if the primary one fails.
+2. **Global Traffic Routing:** Directs users to the nearest AWS region for reduced latency.
+3. **Latency-Based Routing:** Ensures traffic is directed to the lowest-latency endpoint, improving performance.
+
+### 7(c) Four Benefits of Amazon CloudFront
+1. **Low Latency:** Delivers content faster by caching it at global edge locations.
+2. **Enhanced Security:** Integrates with AWS Shield and Web Application Firewall (WAF) to protect against DDoS attacks.
+3. **Cost-Effective:** Reduces bandwidth costs by caching frequently accessed data.
+4. **Seamless Scalability:** Automatically handles spikes in traffic without impacting performance.
