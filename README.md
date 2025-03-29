@@ -532,3 +532,30 @@ A managed service means AWS handles administrative tasks like provisioning, patc
    - Automatically adjusts capacity based on incoming traffic.
 4. **Multiple Language Support:**
    - Supports platforms like Python, Java, Node.js, .NET, and more.
+
+### 6(a) AWS Service for Rapid Deployment Across Multiple Languages
+**AWS Elastic Beanstalk** is an AWS service that helps developers quickly deploy resources that support different programming languages, such as **.NET, Java, Python, Node.js, and more**. It automates deployment, scaling, and infrastructure management.
+
+### 6(b) Elastic Block Storage (EBS)
+#### **Three Features of Amazon EBS:**
+1. **Durable and Persistent Storage:**
+   - Provides block-level storage that retains data even after instance termination.
+2. **Snapshot and Backup Support:**
+   - Allows the creation of snapshots for backup and disaster recovery.
+3. **High Performance and Scalability:**
+   - Offers different performance tiers like General Purpose SSD (gp3/gp2) and Provisioned IOPS SSD (io2/io1).
+
+#### **Four Uses of Amazon EBS:**
+1. **Hosting Databases:** Supports MySQL, PostgreSQL, Oracle, and other databases.
+2. **Boot Volumes for EC2 Instances:** Enables operating system storage.
+3. **Big Data Applications:** Provides fast and scalable storage for analytics workloads.
+4. **Backup and Disaster Recovery:** Ensures data protection through EBS snapshots.
+
+### 6(c) Difference Between Internet Gateway and NAT Gateway
+
+| Feature              | Internet Gateway (IGW) | NAT Gateway |
+|---------------------|----------------------|------------|
+| Purpose            | Allows public internet access for VPC instances | Enables private instances to access the internet securely |
+| Direction of Traffic | Both inbound and outbound traffic | Only outbound traffic (no inbound connections) |
+| Public IP Required? | Yes, for instances using it | No, instances remain private |
+| Use Case | Connects public-facing applications to the internet | Allows private instances to download updates without being exposed |
