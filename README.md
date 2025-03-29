@@ -149,8 +149,22 @@ Security rings define different levels of privilege for executing instructions o
    - Provides an interface between the host and guest.
    - Examples include hypervisors like VMware ESXi, KVM, and Microsoft Hyper-V.
 
+### 4(c) Short Notes
 
+#### **i) Memory Virtualization**
+Memory virtualization allows multiple virtual machines to share the physical memory of a host system efficiently. It creates an abstraction layer between the VM and the physical memory, enabling features like:
+- **Paging and Segmentation:** Dividing memory into blocks for better management.
+- **Overcommitment:** Allocating more virtual memory than physically available.
+- **Swapping:** Moving less frequently used pages to disk to optimize RAM usage.
 
+#### **ii) Operating System Level Virtualization**
+Operating system-level virtualization enables multiple isolated user-space instances (containers) to run on a single OS kernel. Each instance shares the same underlying OS but operates independently.
 
+**Examples:** Docker, LXC (Linux Containers).
 
+**Advantages:**
+- Lightweight compared to full virtualization.
+- Faster startup times due to shared OS resources.
 
+**Disadvantages:**
+- All containers must use the same kernel version as the host.
