@@ -584,3 +584,34 @@ A managed service means AWS handles administrative tasks like provisioning, patc
 2. **Enhanced Security:** Integrates with AWS Shield and Web Application Firewall (WAF) to protect against DDoS attacks.
 3. **Cost-Effective:** Reduces bandwidth costs by caching frequently accessed data.
 4. **Seamless Scalability:** Automatically handles spikes in traffic without impacting performance.
+
+### 8(a) Cost-Effective Storage for Infrequent Access
+The best and most cost-effective solution for storing data that is **not frequently accessed** is **Amazon S3 Glacier or S3 Glacier Deep Archive**. These services provide **low-cost storage** for long-term data retention while ensuring durability and security.
+
+### 8(b) AWS Data Archiving Service and Key Concepts
+#### **AWS Data Archiving Service:**
+- **Amazon S3 Glacier** is the primary AWS service for long-term data archiving at low cost.
+
+#### **Key Terms:**
+1. **Archive:**
+   - A single object stored in **Amazon S3 Glacier**.
+   - Can be any data, such as files, documents, or backups.
+
+2. **Vault:**
+   - A **container for storing archives** in S3 Glacier.
+   - Helps organize and manage archived data.
+
+3. **Vault Access Policy:**
+   - A policy that defines **permissions** for accessing a Glacier vault.
+   - Determines which users or AWS services can read, write, or delete archives.
+
+### 8(c) Amazon EFS and Amazon S3 as a Managed Service
+#### **Amazon Elastic File System (EFS) Specialty:**
+- **Scalable and Elastic:** Automatically adjusts storage size based on usage.
+- **File-Based Storage:** Provides a fully managed **NFS (Network File System)** for AWS resources.
+- **Multi-AZ Availability:** Supports access from multiple EC2 instances across Availability Zones.
+
+#### **Why Amazon S3 is a Managed Service:**
+- **No Infrastructure Management:** AWS handles scaling, maintenance, and durability.
+- **Automatic Redundancy:** Data is replicated across multiple Availability Zones.
+- **Security & Compliance:** Built-in encryption, access controls, and compliance with regulations.
