@@ -1,11 +1,11 @@
 # AWS-sem-prep
 
 ## Mod 2
-## 1(a) What is Server Consolidation?
+### 1(a) What is Server Consolidation?
 
 Server consolidation is the process of reducing the number of physical servers in an IT environment by using virtualization. Instead of running multiple applications on separate physical servers, virtualization allows multiple virtual machines (VMs) to run on a single physical machine. This optimizes resource utilization, reduces power consumption, lowers hardware costs, and simplifies management.
 
-### Benefits of Server Consolidation:
+**Benefits of Server Consolidation**:
 
 Cost Savings: Fewer physical servers reduce hardware, maintenance, and power costs.
 
@@ -16,9 +16,9 @@ Simplified Management: Centralized control and easier updates.
 Scalability: Can easily scale workloads without adding new physical machines.
 
 
-## 1(b) Distinguish Between Type I and Type II Hypervisors
+### 1(b) Distinguish Between Type I and Type II Hypervisors
 
-### Type I Hypervisor (Bare-Metal Hypervisor)
+**Type I Hypervisor (Bare-Metal Hypervisor)**
 
 Runs directly on the host machine's hardware.
 
@@ -26,7 +26,7 @@ Provides better performance and security.
 
 Used in enterprise environments (e.g., VMware ESXi, Microsoft Hyper-V, Xen).
 
-### Type II Hypervisor (Hosted Hypervisor)
+**Type II Hypervisor (Hosted Hypervisor)**
 
 Runs on top of a host operating system.
 
@@ -34,13 +34,13 @@ More suitable for personal use and testing environments.
 
 Examples include VMware Workstation, VirtualBox, and Parallels.
 
-### Schematic Diagram:
+**Schematic Diagram:**
 
 ![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/type1type2hypervisor.png?raw=true)
 
-## 1(c) Privileged and Non-Privileged Instructions
+### 1(c) Privileged and Non-Privileged Instructions
 
-### Privileged Instructions
+**Privileged Instructions**
 
 Can only be executed in kernel mode.
 
@@ -48,7 +48,7 @@ Directly interact with hardware (e.g., modifying control registers, I/O operatio
 
 Example: Enabling/disabling interrupts.
 
-### Non-Privileged Instructions
+**Non-Privileged Instructions**
 
 Can be executed in user mode.
 
@@ -168,3 +168,58 @@ Operating system-level virtualization enables multiple isolated user-space insta
 
 **Disadvantages:**
 - All containers must use the same kernel version as the host.
+
+### 5(a) Roles of Hypervisor Modules
+A hypervisor consists of multiple modules that manage the execution of virtual machines efficiently. The following are key components:
+
+1. **Dispatcher:**
+   - Handles incoming requests from guest operating systems.
+   - Determines the appropriate execution flow and directs requests accordingly.
+
+2. **Allocator:**
+   - Manages resource distribution such as CPU, memory, and I/O.
+   - Ensures optimal allocation by dynamically adjusting resources based on workload demands.
+
+3. **Interpreter:**
+   - Translates privileged instructions issued by guest VMs.
+   - Helps maintain security and stability by ensuring that guests do not directly execute hardware-level commands.
+
+### 5(b) Xen Paravirtualization Architecture
+Xen is a hypervisor that supports para-virtualization, where guest operating systems are aware of virtualization and modified to work efficiently with the hypervisor.
+
+#### **Key Components:**
+1. **Hypervisor (Xen Layer):**
+   - Runs at the lowest level (Ring 0) and manages hardware resources.
+   - Handles CPU scheduling, memory management, and I/O requests.
+
+2. **Domain 0 (Dom0):**
+   - A privileged VM that interacts with the Xen hypervisor.
+   - Manages other guest VMs (DomU) and provides administrative controls.
+
+3. **Domain U (DomU):**
+   - Unprivileged guest VMs running on top of Xen.
+   - Requires modifications to interact with the hypervisor efficiently.
+
+#### **Schematic Diagram:**
+```
++-------------------------+
+| Guest OS (DomU)        |
++-------------------------+
+| Xen Hypercalls         |
++-------------------------+
+| Xen Hypervisor (Ring 0)|
++-------------------------+
+| Hardware Layer         |
++-------------------------+
+```
+
+### 5(c) What is AURI in AWS?
+AURI (Amazon Uniform Resource Identifier) is a unique identifier used in AWS services to reference specific resources. It helps in resource identification and access control across AWS environments.
+
+**Example Usage:**
+- Used in AWS S3 for object referencing.
+- Helps in IAM policies and permissions.
+- Identifies Amazon RDS instances, EC2 instances, and other cloud resources.
+
+**End of Assignment**
+
