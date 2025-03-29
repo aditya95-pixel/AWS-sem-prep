@@ -425,3 +425,39 @@ AWS services can be categorized as either Global or Regional:
 
 ### 1(e) Amazon VPC Service Category
 Amazon VPC (Virtual Private Cloud) falls under the **Networking and Content Delivery** category, allowing users to create isolated cloud environments.
+
+### 2(a) Responsibility Matrix
+
+| Process | Who is Responsible? (AWS or Customer) |
+|---------------------------|-------------------------------|
+| 1. Upgrades and patches to the operating system on the EC2 instance? | Customer |
+| 2. Physical security of the data center? | AWS |
+| 3. Virtualization infrastructure? | AWS |
+| 4. EC2 security group settings? | Customer |
+| 5. Configuration of applications that run on the EC2 instance? | Customer |
+| 6. Oracle upgrades or patches if the Oracle instance runs as an Amazon RDS instance? | AWS |
+| 7. Oracle upgrades or patches if Oracle runs on an EC2 instance? | Customer |
+| 8. S3 bucket access configuration? | Customer |
+
+### 2(b) IAM Policy and IAM Role Definitions
+
+1. **IAM Policy:**
+   - A JSON document that defines permissions for actions on AWS resources.
+   - Can be attached to users, groups, or roles.
+   - Example: Allowing or denying access to an S3 bucket.
+
+2. **IAM Role:**
+   - A set of permissions that can be assumed by AWS services or users.
+   - Unlike users, roles do not have permanent credentials.
+   - Example: An EC2 instance assuming a role to access S3.
+
+### 2(c) AWS Access Methods
+AWS services and resources can be accessed by using the **AWS Management Console, AWS CLI (Command Line Interface), and AWS SDKs/APIs**.
+
+### 2(d) Two Uses of AWS CloudTrail
+
+1. **Security Monitoring:**
+   - Tracks API activity, helping detect unauthorized access or security threats.
+   
+2. **Compliance and Auditing:**
+   - Provides logs for governance, regulatory, and operational auditing.
