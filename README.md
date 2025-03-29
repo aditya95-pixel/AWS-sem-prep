@@ -212,5 +212,58 @@ AURI (Amazon Uniform Resource Identifier) is a unique identifier used in AWS ser
 - Helps in IAM policies and permissions.
 - Identifies Amazon RDS instances, EC2 instances, and other cloud resources.
 
+### 6(a) Goldberg and Popek Criteria for Virtual Machine Managers
+Goldberg and Popek established three key criteria that a Virtual Machine Manager (VMM) must meet to efficiently support virtualization:
+
+1. **Equivalence (Fidelity):**
+   - A virtual machine should behave identically to a physical machine, except for performance-related differences.
+
+2. **Resource Control (Safety):**
+   - The VMM must have complete control over the virtualized resources, ensuring that guest operating systems cannot directly access or modify hardware resources.
+
+3. **Efficiency:**
+   - Privileged instructions executed by the guest operating system must be efficiently handled by the VMM to minimize overhead.
+
+### 6(b) Three Ways of Interacting with AWS
+AWS provides multiple ways for users to interact with its services:
+
+1. **AWS Management Console:**
+   - A web-based user interface for managing AWS services visually.
+   
+2. **AWS Command Line Interface (CLI):**
+   - Allows users to manage AWS services programmatically using command-line commands.
+
+3. **AWS Software Development Kits (SDKs):**
+   - Provides language-specific libraries (e.g., Python, Java, Node.js) for developers to integrate AWS services into their applications.
+
+### 6(c) Short Notes
+
+#### **i) PaaS (Platform as a Service) Service Model**
+PaaS provides a managed platform that enables developers to build, deploy, and scale applications without managing the underlying infrastructure.
+
+**Examples:** AWS Elastic Beanstalk, Google App Engine, Microsoft Azure App Services.
+
+**Advantages:**
+- Reduces the complexity of managing infrastructure.
+- Provides built-in scalability and development tools.
+
+**Disadvantages:**
+- Limited control over the underlying infrastructure.
+- Vendor lock-in can be a concern.
+
+#### **ii) Network Virtualization**
+Network virtualization abstracts physical network resources to create multiple logical networks. It enables better network management, isolation, and scalability.
+
+**Types:**
+1. **Internal Network Virtualization:** Combines network resources within a single system.
+2. **External Network Virtualization:** Combines multiple physical networks into a single logical network.
+
+**Advantages:**
+- Improves network flexibility and scalability.
+- Enhances security through isolation.
+
+**Disadvantages:**
+- Can introduce additional complexity in network management.
+
 **End of Assignment**
 
