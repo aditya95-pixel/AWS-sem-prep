@@ -36,7 +36,7 @@ Examples include VMware Workstation, VirtualBox, and Parallels.
 
 Schematic Diagram:
 
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40ravipatel.it%2Funderstanding-hypervisors-exploring-type-1-vs-type-2-and-full-vs-para-virtualization-71b4dad9abd9&psig=AOvVaw0T1Pkyu_X3Y2bXv5gxcErT&ust=1743347149363000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCx-a3Ir4wDFQAAAAAdAAAAABAE)
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/type1type2hypervisor.png?raw=true)
 
 1(c) Privileged and Non-Privileged Instructions
 
