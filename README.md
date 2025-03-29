@@ -1,7 +1,7 @@
 # AWS-sem-prep
 
 ## Mod 2
-1(a) What is Server Consolidation?
+## 1(a) What is Server Consolidation?
 
 Server consolidation is the process of reducing the number of physical servers in an IT environment by using virtualization. Instead of running multiple applications on separate physical servers, virtualization allows multiple virtual machines (VMs) to run on a single physical machine. This optimizes resource utilization, reduces power consumption, lowers hardware costs, and simplifies management.
 
@@ -16,7 +16,7 @@ Simplified Management: Centralized control and easier updates.
 Scalability: Can easily scale workloads without adding new physical machines.
 
 
-1(b) Distinguish Between Type I and Type II Hypervisors
+## 1(b) Distinguish Between Type I and Type II Hypervisors
 
 Type I Hypervisor (Bare-Metal Hypervisor)
 
@@ -38,7 +38,7 @@ Schematic Diagram:
 
 ![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/type1type2hypervisor.png?raw=true)
 
-1(c) Privileged and Non-Privileged Instructions
+## 1(c) Privileged and Non-Privileged Instructions
 
 Privileged Instructions
 
