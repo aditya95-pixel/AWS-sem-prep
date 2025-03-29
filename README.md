@@ -56,3 +56,36 @@ Do not require direct access to hardware resources.
 
 Example: Arithmetic and logical operations, reading the status of a register.
 
+### 2(a) What do you mean by Virtualization in Cloud Computing?
+Virtualization in cloud computing refers to the creation of virtual instances of computing resources such as servers, storage, networks, and operating systems. It allows multiple virtual machines (VMs) to run on a single physical machine, optimizing resource utilization and scalability.
+
+### 2(b) Virtualization Advantages and Disadvantages
+
+**Advantages:**
+- **Cost Efficiency:** Reduces the need for physical hardware, lowering operational expenses.
+- **Scalability:** Resources can be easily allocated and adjusted as per demand.
+- **Flexibility:** Virtual environments can be quickly created, modified, or deleted.
+
+**Disadvantages:**
+- **Performance Overhead:** Virtualization can introduce latency due to resource sharing.
+- **Security Concerns:** Virtual machines share the same underlying hardware, increasing vulnerability to attacks.
+- **Complexity:** Managing multiple virtualized environments can be challenging.
+
+### 2(c) Full Virtualization
+Full virtualization is a technique in which a virtual machine completely emulates the underlying hardware, allowing unmodified guest operating systems to run as if they were on a physical machine.
+
+**Advantage:**
+- Supports multiple operating systems without modification.
+
+**Disadvantage:**
+- Higher resource overhead due to full emulation of hardware.
+
+### 2(d) Cloud Service Model for Virtual Machine Deployment
+The described scenario falls under the **Infrastructure as a Service (IaaS)** model.
+
+**Reason:**
+- IaaS provides fundamental computing resources such as virtual machines, networking, and storage.
+- Users have control over their virtual machines, including network configurations, operating system choices, and application installations.
+
+
+
