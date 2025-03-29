@@ -265,11 +265,7 @@ Network virtualization abstracts physical network resources to create multiple l
 **Disadvantages:**
 - Can introduce additional complexity in network management.
 
-# AWS Cloud Assignment - VMware Virtualization and AWS Pricing
-
-## 7. VMware Virtualization and AWS Cost Efficiency
-
-### (a) VMware Full Virtualization Architecture
+### 7(a) VMware Full Virtualization Architecture
 VMware utilizes full virtualization, which allows unmodified guest operating systems to run on a virtual machine without requiring changes. The hypervisor acts as an intermediary between the guest OS and hardware.
 
 #### **Key Components:**
@@ -299,7 +295,7 @@ VMware utilizes full virtualization, which allows unmodified guest operating sys
 +-------------------------+
 ```
 
-### (b) "In AWS, You Pay Less When You Use More" – Justification
+### 7(b) "In AWS, You Pay Less When You Use More" – Justification
 AWS offers cost-saving mechanisms that reward increased usage, making cloud computing more economical at scale. Some key ways this is achieved:
 
 1. **Volume Discounts:**
@@ -314,7 +310,7 @@ AWS offers cost-saving mechanisms that reward increased usage, making cloud comp
 4. **Auto Scaling & Elastic Load Balancing:**
    - Helps optimize resource usage, reducing unnecessary costs.
 
-### (c) Short Notes
+### 7(c) Short Notes
 
 #### **i) SaaS (Software as a Service) Service Model**
 SaaS provides cloud-based applications that users can access via the internet without managing underlying infrastructure.
