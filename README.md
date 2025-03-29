@@ -507,3 +507,28 @@ Amazon CloudWatch allows users to monitor EC2 instances in real-time by:
 
 **What is a Managed Service?**
 A managed service means AWS handles administrative tasks like provisioning, patching, scaling, backups, and security updates, reducing the burden on customers.
+
+### 5(a) Four Pillars of Cost Optimization in Amazon EC2
+1. **Right Sizing:**
+   - Select the appropriate instance type and size based on workload requirements.
+2. **Increase Elasticity:**
+   - Use Auto Scaling to dynamically adjust capacity based on demand.
+3. **Optimize Storage:**
+   - Choose cost-effective storage options like EBS-optimized instances and Amazon S3 lifecycle policies.
+4. **Use Reserved and Spot Instances:**
+   - Use Reserved Instances for predictable workloads and Spot Instances for flexible, cost-efficient computing.
+
+### 5(b) Serverless Computing
+**Serverless computing** is a cloud computing execution model where AWS manages infrastructure, scaling, and provisioning, allowing developers to focus on code rather than server management.
+
+**AWS Lambda** is a serverless compute service that provides **event-driven execution of code without provisioning or managing servers**.
+
+### 5(c) Four Benefits of AWS Elastic Beanstalk
+1. **Simplified Deployment:**
+   - Automatically handles the provisioning, deployment, and scaling of applications.
+2. **Managed Infrastructure:**
+   - Takes care of OS updates, load balancing, and monitoring.
+3. **Auto Scaling Support:**
+   - Automatically adjusts capacity based on incoming traffic.
+4. **Multiple Language Support:**
+   - Supports platforms like Python, Java, Node.js, .NET, and more.
