@@ -282,18 +282,7 @@ VMware utilizes full virtualization, which allows unmodified guest operating sys
    - Handles privileged instructions using binary translation.
 
 #### **Schematic Diagram:**
-```
-+-------------------------+
-| Guest OS (VM1)         |
-| Guest OS (VM2)         |
-+-------------------------+
-| Virtual Machine Monitor|
-+-------------------------+
-| VMware ESXi Hypervisor |
-+-------------------------+
-| Hardware Layer         |
-+-------------------------+
-```
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/vmware.png?raw=true)
 
 ### 7(b) "In AWS, You Pay Less When You Use More" – Justification
 AWS offers cost-saving mechanisms that reward increased usage, making cloud computing more economical at scale. Some key ways this is achieved:
