@@ -133,7 +133,7 @@ Security rings define different levels of privilege for executing instructions o
 
 #### **Schematic Diagram:**
 
-![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/type1type2hypervisor.png?raw=true)
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/instructionmode.png?raw=true)
 
 ### 4(b) Components of a Virtualized Environment
 1. **Guest:**
