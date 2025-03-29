@@ -484,3 +484,26 @@ AWS services and resources can be accessed by using the **AWS Management Console
 
 4. **Regularly Rotate Access Keys and Credentials:**
    - Avoid using long-term credentials and implement automatic key rotation.
+
+### 4(a) Amazon Machine Image (AMI)
+An **Amazon Machine Image (AMI)** is a pre-configured template that contains the necessary components (operating system, application server, and applications) required to launch an Amazon EC2 instance.
+
+**Key Decisions When Creating an EC2 Instance:**
+1. **Choose an AMI:** Select the appropriate Amazon Machine Image based on OS, pre-installed software, and architecture.
+2. **Select an Instance Type:** Decide on CPU, memory, and network capacity based on workload requirements.
+3. **Configure Instance Details:** Define VPC, subnet, auto-scaling, IAM roles, and monitoring settings.
+4. **Add Storage:** Specify the type and size of EBS volumes for persistent storage.
+5. **Configure Security Group:** Set inbound and outbound rules for firewall protection.
+
+### 4(b) Using Amazon CloudWatch with Amazon EC2
+Amazon CloudWatch allows users to monitor EC2 instances in real-time by:
+1. **Monitoring Metrics:** Track CPU utilization, disk activity, network traffic, and memory usage.
+2. **Setting Alarms:** Define threshold-based alerts for resource consumption.
+3. **Enabling Auto Scaling:** Automatically adjust instance count based on demand.
+4. **Logging and Debugging:** Use CloudWatch Logs to collect and analyze system and application logs.
+
+### 4(c) Managed Service: Amazon EC2 vs. Amazon RDS
+- **Amazon RDS (Relational Database Service) provides a fully managed service, while Amazon EC2 does not.**
+
+**What is a Managed Service?**
+A managed service means AWS handles administrative tasks like provisioning, patching, scaling, backups, and security updates, reducing the burden on customers.
