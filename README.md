@@ -201,17 +201,8 @@ Xen is a hypervisor that supports para-virtualization, where guest operating sys
    - Requires modifications to interact with the hypervisor efficiently.
 
 #### **Schematic Diagram:**
-```
-+-------------------------+
-| Guest OS (DomU)        |
-+-------------------------+
-| Xen Hypercalls         |
-+-------------------------+
-| Xen Hypervisor (Ring 0)|
-+-------------------------+
-| Hardware Layer         |
-+-------------------------+
-```
+
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/xenpara.png?raw=true)
 
 ### 5(c) What is AURI in AWS?
 AURI (Amazon Uniform Resource Identifier) is a unique identifier used in AWS services to reference specific resources. It helps in resource identification and access control across AWS environments.
