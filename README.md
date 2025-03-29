@@ -149,7 +149,7 @@ Security rings define different levels of privilege for executing instructions o
    - Provides an interface between the host and guest.
    - Examples include hypervisors like VMware ESXi, KVM, and Microsoft Hyper-V.
 
-**End of Assignment**
+
 
 
 
