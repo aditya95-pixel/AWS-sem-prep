@@ -375,3 +375,53 @@ Total Cost of Ownership (TCO) refers to the total expenses incurred when deployi
 
 5. **Security and Compliance:**
    - Leading cloud providers invest heavily in security, compliance, and disaster recovery solutions, reducing risks compared to on-premises deployments.
+
+## Mod 3
+
+### 1(a) Definitions of AWS Regions, Availability Zones, and Edge Locations
+
+1. **Regions:**
+   - Geographic locations around the world where AWS has multiple data centers.
+   - Each region is isolated from others to provide redundancy and compliance options.
+   - Example: US-East-1 (N. Virginia), EU-West-1 (Ireland).
+
+2. **Availability Zones (AZs):**
+   - Individual data centers within a region, connected via low-latency networks.
+   - Designed to provide high availability and fault tolerance.
+   - A single region typically has multiple AZs.
+
+3. **Edge Locations:**
+   - Distributed data centers used by AWS CloudFront for content delivery.
+   - They cache data closer to users to reduce latency and improve performance.
+
+### 1(b) AWS Identity and Access Management (IAM) Capabilities
+AWS IAM enables secure access control by allowing users to:
+
+1. **Manage Users and Groups:**
+   - Create users and assign them permissions.
+
+2. **Control Access via Policies:**
+   - Assign fine-grained permissions using JSON-based policies.
+
+3. **Enable Multi-Factor Authentication (MFA):**
+   - Add an extra layer of security beyond passwords.
+
+4. **Use Roles for Services:**
+   - Grant temporary access permissions to AWS services or external users.
+
+### 1(c) AWS Global Infrastructure Component Used by Amazon CloudFront
+Amazon CloudFront uses **Edge Locations** to ensure low-latency content delivery by caching content closer to users.
+
+### 1(d) Identifying Global vs. Regional AWS Services
+AWS services can be categorized as either Global or Regional:
+
+- **Global Services:**
+  - **IAM** (Identity and Access Management)
+  - **Route 53** (DNS and traffic routing)
+
+- **Regional Services:**
+  - **Amazon EC2** (Elastic Compute Cloud)
+  - **AWS Lambda** (Serverless computing)
+
+### 1(e) Amazon VPC Service Category
+Amazon VPC (Virtual Private Cloud) falls under the **Networking and Content Delivery** category, allowing users to create isolated cloud environments.
