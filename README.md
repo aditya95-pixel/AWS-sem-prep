@@ -87,5 +87,34 @@ The described scenario falls under the **Infrastructure as a Service (IaaS)** mo
 - IaaS provides fundamental computing resources such as virtual machines, networking, and storage.
 - Users have control over their virtual machines, including network configurations, operating system choices, and application installations.
 
+### 3(a) Name Three Hardware Virtualization Techniques
+1. **Full Virtualization:** Uses a hypervisor to create and manage virtual machines that fully emulate physical hardware.
+2. **Para-Virtualization:** The guest operating system is modified to be aware of the virtualization environment, improving efficiency.
+3. **Hardware-Assisted Virtualization:** Modern processors (e.g., Intel VT-x, AMD-V) provide dedicated instructions to support virtualization at the hardware level.
+
+### (b) What is ISA, ABI, and API with Respect to a Machine Reference Model?
+- **Instruction Set Architecture (ISA):** Defines the interface between software and hardware, specifying machine-level instructions.
+- **Application Binary Interface (ABI):** Defines how applications interact with the operating system at the binary level (e.g., system calls, data types, conventions).
+- **Application Programming Interface (API):** Provides a set of functions and protocols for software applications to communicate with an operating system or other software components.
+
+### (c) Para-Virtualization
+Para-virtualization is a virtualization technique where the guest operating system is modified to interact efficiently with the hypervisor, reducing overhead.
+
+**Advantage:**
+- Improved performance compared to full virtualization due to reduced emulation overhead.
+
+**Disadvantage:**
+- Requires modifications to the guest operating system, limiting compatibility.
+
+### (d) Process-Level vs. System-Level Techniques in Execution Virtualization
+- **Process-Level Virtualization:**
+  - Virtualizes individual processes by providing an abstraction layer (e.g., Java Virtual Machine, Docker containers).
+  - Allows execution of applications across different platforms without modification.
+
+- **System-Level Virtualization:**
+  - Virtualizes entire operating systems, allowing multiple OS instances to run on a single physical machine (e.g., VMware ESXi, KVM).
+  - Provides complete isolation between virtual machines.
+
+
 
 
