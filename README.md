@@ -273,11 +273,9 @@ VMware utilizes full virtualization, which allows unmodified guest operating sys
    - Runs as a virtual machine on top of the hypervisor.
    - Unaware that it is running in a virtualized environment.
 
-2. **VMware Hypervisor (ESXi):**
+2. **VMware Hypervisor (ESXi)/**Virtual Machine Monitor (VMM):**:**
    - Directly manages hardware resources.
    - Ensures isolation between multiple virtual machines.
-
-3. **Virtual Machine Monitor (VMM):**
    - Emulates hardware for the guest OS.
    - Handles privileged instructions using binary translation.
 
