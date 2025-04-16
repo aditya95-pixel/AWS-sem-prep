@@ -215,6 +215,57 @@ The **Cloud Cube Model** (by The Open Group) classifies cloud implementations ac
 - **Scalability Limits**: Not designing for horizontal scaling upfront
 - **Cost Tradeoffs**: Elasticity can lead to bill shocks if unmonitored
 
+### 4(a) Educational Organization Cloud Scenario
+
+#### Recommended Deployment Model: **Community Cloud**
+
+1. **Why Community Cloud?**
+   - **Shared Concerns**: All stakeholders (professors, researchers, students) have common educational goals but different resource needs
+   - **Cost Efficiency**: Shared infrastructure reduces costs compared to private cloud
+   - **Custom Security**: Can implement education-specific compliance (FERPA, HIPAA for research data)
+
+2. **Justification by User Group**:
+
+| Stakeholder | Needs | Community Cloud Benefits |
+|-------------|-------|--------------------------|
+| Professors | Material sharing, exam portals | Dedicated education apps with access control |
+| Researchers | HPC resources | Shared high-performance computing clusters |
+| Students | Discussion forums | Scalable collaboration tools with SSO |
+
+**Alternative Considered**: Hybrid Cloud (but would be overkill for this collaborative use-case)
+
+### 4(b) Scaling Policies Comparison
+
+| Aspect | Horizontal Scaling | Vertical Scaling |
+|--------|-------------------|-----------------|
+| **Definition** | Adding more nodes/instances | Upgrading existing node resources |
+| **Cloud Example** | Adding more EC2 instances | Upgrading EC2 from t2.micro to t2.xlarge |
+| **Downtime** | Minimal (if architected properly) | Requires instance reboot |
+| **Cost** | Pay for what you add | More expensive high-end instances |
+| **Limits** | Application must be stateless | Hardware ceiling (max RAM/CPU) |
+| **Best For** | Web apps, microservices | Monolithic apps, databases |
+
+**Pro Tip**: Modern clouds prefer horizontal scaling (via Kubernetes, serverless) for better fault tolerance.
+
+### 4(c) NIST Cloud Reference Model Actors
+
+1. **Cloud Consumer**  
+   - End-users who utilize cloud services (students accessing LMS in our scenario)
+
+2. **Cloud Provider**  
+   - Entity delivering cloud services (AWS/Azure for the community cloud)
+
+3. **Cloud Auditor**  
+   - Independent security/compliance verifiers (e.g., checking FERPA compliance)
+
+4. **Cloud Broker**  
+   - Intermediaries that manage service selection/aggregation (like educational SaaS curators)
+
+5. **Cloud Carrier**  
+   - Network providers enabling cloud access (ISP providing campus connectivity)
+
+
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
