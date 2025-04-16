@@ -487,9 +487,8 @@ graph TD
     Newer_Models --> DBaaS(Database-as-a-Service)
     Newer_Models --> AIaaS(AI-as-a-Service)
 ```
-# Hybrid Cloud and Cloud Service Models
 
-## 8(a) Hybrid Cloud
+### 8(a) Hybrid Cloud
 
 **Definition**: An integrated cloud environment combining:
 - **Public Cloud** (e.g., AWS/Azure)
@@ -505,7 +504,7 @@ graph TD
 - Hospital keeping patient records on-premises (HIPAA compliance)
 - Running analytics on AWS during research projects
 
-## 8(b) Private Cloud Deployment Models
+### 8(b) Private Cloud Deployment Models
 
 | Aspect | On-Site Private Cloud | Outsourced Private Cloud |
 |--------|-----------------------|--------------------------|
@@ -519,7 +518,7 @@ graph TD
 - On-site: Better for defense contractors (security)
 - Outsourced: Preferred by mid-size banks (balance of control/cost)
 
-## 8(c) Infrastructure as a Service (IaaS)
+### 8(c) Infrastructure as a Service (IaaS)
 
 **Definition**: Cloud model providing:
 - Virtualized computing resources
@@ -535,7 +534,7 @@ graph TD
 - **AWS EC2**: Launch Linux/Windows VMs in minutes
 - **Use Case**: Airbnb dynamically scaling EC2 instances during peak bookings
 
-## 8(d) Cloud Cube Security Boundary Dimension
+### 8(d) Cloud Cube Security Boundary Dimension
 
 **Definition**: Classifies cloud security approaches in the Cloud Cube Model:
 
