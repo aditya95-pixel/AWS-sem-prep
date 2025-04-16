@@ -153,6 +153,68 @@ Service orchestration is the **automated coordination** of multiple cloud servic
 
 Example: Automating a CI/CD pipeline that includes testing, building, and deployment across hybrid cloud environments.
 
+### 3(a) Key Cloud Pricing Concepts
+
+#### Pay-as-you-go
+- **Definition**: Payment model where users are charged only for the resources they actually consume
+- **Characteristics**:
+  - No upfront capital expenditure
+  - Billing granularity (per-second/minute/hour)
+  - Automatic cost adjustment based on usage
+- **Example**: AWS EC2 charges only for running instance hours
+
+#### Measured Service
+- **Definition**: Cloud systems automatically track and report resource usage
+- **Key Aspects**:
+  - Enables pay-as-you-go pricing
+  - Provides transparency in billing
+  - Allows usage monitoring and optimization
+- **Implementation**:
+  - Usage metrics (CPU hours, storage GB, API calls)
+  - Detailed billing reports
+  - Alerts for unusual usage patterns
+
+### 3(b) Cloud Cube Model
+
+#### Overview
+The **Cloud Cube Model** (by The Open Group) classifies cloud implementations across four dimensions:
+
+1. **Physical Location**  
+   - Internal (on-premises) vs. External (provider-hosted)
+
+2. **Ownership**  
+   - Proprietary (private) vs. Open (community/public)
+
+3. **Security Boundary**  
+   - Perimeterized (traditional security) vs. De-perimeterized (zero-trust)
+
+4. **Sourcing**  
+   - Insourced (self-managed) vs. Outsourced (third-party managed)
+
+*Visualization*:
+
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/cloudcube.png?raw=true))
+
+
+### 3(c) Elasticity vs. Scalability: Critical Analysis
+
+| Aspect        | Elasticity | Scalability |
+|--------------|------------|-------------|
+| **Definition** | Automatic, short-term resource adjustment | Ability to handle growing workloads |
+| **Timeframe** | Seconds/minutes response | Long-term capacity planning |
+| **Use Case**  | Sudden traffic spikes | Steady workload growth |
+| **Key Benefit** | Cost optimization | Performance maintenance |
+| **Critical Challenge** | Over-provisioning risk | Under-estimation of growth |
+
+#### Key Differentiators:
+1. **Elasticity** is about *automatic flexibility* (e.g., AWS Lambda scaling to zero)
+2. **Scalability** concerns *architectural capacity* (e.g., sharding databases)
+
+#### Common Pitfalls:
+- **Elasticity Misuse**: Assuming all services auto-scale equally
+- **Scalability Limits**: Not designing for horizontal scaling upfront
+- **Cost Tradeoffs**: Elasticity can lead to bill shocks if unmonitored
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
