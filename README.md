@@ -41,6 +41,29 @@ A **community cloud** serves a group of cloud consumers with shared concerns suc
 
 Example: **NASA’s Nebula** (now OpenStack) was an early community cloud for scientific research.  
 
+### 1(d) Describe the ownership dimension of the cloud cube model.
+
+#### Cloud Cube Model: Ownership Dimension  
+
+The **Ownership Dimension** in the [Cloud Cube Model](https://www.opengroup.org/cloud/cloud_cube) (by The Open Group) classifies cloud deployments based on **who owns and controls** the infrastructure:  
+
+#### **1. Internal (Owned)**  
+- **Description**: The cloud is owned and operated *solely by the organization* (e.g., on-premises private cloud).  
+- **Control**: Full autonomy over security, compliance, and customization.  
+- **Example**: A bank running a private cloud for sensitive transactions.  
+
+#### **2. External (3rd-Party Owned)**  
+- **Description**: The cloud is owned and managed by a *public provider* (e.g., AWS, Azure).  
+- **Control**: Less governance but offers scalability and cost efficiency.  
+- **Example**: A startup hosting its SaaS product on Google Cloud.  
+
+#### **Hybrid Ownership**  
+- Combines internal and external clouds (e.g., sensitive data on-premises + burst workloads to AWS).  
+
+#### Why It Matters?  
+- **Security**: Internal clouds offer tighter control for regulated industries (e.g., healthcare).  
+- **Cost**: External clouds reduce capital expenditure.  
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
