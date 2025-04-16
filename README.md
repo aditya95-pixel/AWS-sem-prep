@@ -1,5 +1,15 @@
 # AWS Semester preparation
+## Mod 1
+### 1(a) Write two advantages of perceiving infrastructure as software in the Cloud environment rather than as hardware in the traditional IT environment.
 
+1. **Scalability and Flexibility**
+   - Infrastructure as software allows for dynamic provisioning and scaling of resources based on demand.
+   - Unlike traditional hardware setups, cloud infrastructure can be automated using scripts and APIs to quickly adapt to changing workloads.
+
+2. **Automation and Efficiency**
+   - Cloud environments support Infrastructure as Code (IaC), enabling automated deployments, updates, and configurations.
+   - This reduces human error, speeds up development cycles, and ensures consistency across environments.
+  
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
