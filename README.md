@@ -45,7 +45,7 @@ Example: **NASA’s Nebula** (now OpenStack) was an early community cloud for sc
 
 #### Cloud Cube Model: Ownership Dimension  
 
-The **Ownership Dimension** in the [Cloud Cube Model](https://www.opengroup.org/cloud/cloud_cube) (by The Open Group) classifies cloud deployments based on **who owns and controls** the infrastructure:  
+The **Ownership Dimension** in the ![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/type1type2cloudcube.png?raw=true)) classifies cloud deployments based on **who owns and controls** the infrastructure:  
 
 #### **1. Internal (Owned)**  
 - **Description**: The cloud is owned and operated *solely by the organization* (e.g., on-premises private cloud).  
