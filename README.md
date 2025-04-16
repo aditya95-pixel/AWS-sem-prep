@@ -88,6 +88,71 @@ While cloud computing offers scalability and cost-efficiency, it also has some d
 - **Vendor Lock-in**: Migrating between providers can be complex and costly.  
 - **Hidden Costs**: Egress fees, premium support, or scaling expenses can add up.  
 
+### 2(a) Vendor Lock-In in Cloud Computing
+
+#### Definition:
+**Vendor lock-in** refers to the difficulty of migrating from one cloud provider to another due to:
+- Proprietary technologies
+- Unique APIs
+- Specialized data formats
+- Custom infrastructure configurations
+
+#### Most Affected Service Model:
+**Platform-as-a-Service (PaaS)** is most vulnerable because:
+1. Applications are built using provider-specific tools and frameworks
+2. Middleware and runtime environments are provider-dependent
+3. Requires significant code changes to migrate
+
+Example: An app built on AWS Lambda may need complete rewriting to move to Azure Functions.
+
+### 2(b) NIST Cloud Computing Essential Characteristics
+
+The **5 core features** according to NIST (SP 800-145) are:
+
+1. **On-demand self-service**  
+   - Users can provision resources automatically without human interaction
+
+2. **Broad network access**  
+   - Services available over standard networks/Devices
+
+3. **Resource pooling**  
+   - Multi-tenant model with dynamically assigned resources
+
+4. **Rapid elasticity**  
+   - Automatic scaling to handle workload fluctuations
+
+5. **Measured service**  
+   - Pay-per-use billing with transparent monitoring
+
+### 2(c) Service Orchestration in Cloud Computing
+
+#### Definition:
+Service orchestration is the **automated coordination** of multiple cloud services and resources to complete complex workflows.
+
+#### Key Aspects:
+1. **Workflow Automation**  
+   - Coordinates interdependent tasks across systems
+   - Example: Auto-scaling + load balancing + database replication
+
+2. **Components Involved**:
+   - Virtual machines
+   - Containers
+   - Microservices
+   - Storage systems
+   - Network configurations
+
+3. **Tools Used**:
+   - Kubernetes (container orchestration)
+   - Terraform (infrastructure as code)
+   - AWS Step Functions (serverless workflows)
+
+#### Benefits:
+- Ensures proper service sequencing
+- Maintains dependencies between components
+- Enables end-to-end automation of complex processes
+
+Example: Automating a CI/CD pipeline that includes testing, building, and deployment across hybrid cloud environments.
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
