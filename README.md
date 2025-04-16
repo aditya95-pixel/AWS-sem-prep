@@ -24,6 +24,23 @@ Here are two common examples where the service provider delivers a fully managed
 
 Both eliminate the need for user-managed infrastructure, offering a turnkey solution.  
 
+### 1(c)  A community cloud serves a group of Cloud Consumers with shared concerns such as _______, rather than serving a single organization as does a private cloud.
+
+#### Community Cloud Shared Concerns  
+
+A **community cloud** serves a group of cloud consumers with shared concerns such as:  
+
+##### **Common Use Cases**  
+1. **Industry-Specific Compliance** (e.g., healthcare organizations sharing HIPAA-compliant infrastructure).  
+2. **Collaborative Research** (e.g., universities pooling resources for high-performance computing).  
+3. **Government & Public Sector** (e.g., agencies sharing secure, sovereignty-aligned clouds).  
+
+#### Key Difference vs. Private Cloud  
+- **Private Cloud**: Dedicated to a *single organization*.  
+- **Community Cloud**: Shared by *multiple organizations with aligned needs*.  
+
+Example: **NASA’s Nebula** (now OpenStack) was an early community cloud for scientific research.  
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
