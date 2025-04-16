@@ -9,7 +9,10 @@
 2. **Automation and Efficiency**
    - Cloud environments support Infrastructure as Code (IaC), enabling automated deployments, updates, and configurations.
    - This reduces human error, speeds up development cycles, and ensures consistency across environments.
-  
+
+### 1(b)    _____-as-a-Service Services provides you with a completed product that the service provider runs and manages. Give two examples of the same.
+
+Software-as-a-Service 
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
