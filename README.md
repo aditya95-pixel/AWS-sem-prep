@@ -66,7 +66,27 @@ The **Ownership Dimension** classifies cloud deployments based on **who owns and
 
 #### Why It Matters?  
 - **Security**: Internal clouds offer tighter control for regulated industries (e.g., healthcare).  
-- **Cost**: External clouds reduce capital expenditure.  
+- **Cost**: External clouds reduce capital expenditure.
+
+### 1(e) Write two disadvantages of using cloud computing.
+
+# Disadvantages of Cloud Computing  
+
+While cloud computing offers scalability and cost-efficiency, it also has some drawbacks:  
+
+### 1. **Dependency on Internet Connectivity**  
+   - **Issue**: Cloud services require a stable, high-speed internet connection.  
+   - **Impact**: Downtime or slow connectivity disrupts access to critical applications and data.  
+   - **Example**: Remote teams facing delays due to poor internet in rural areas.  
+
+### 2. **Security and Compliance Risks**  
+   - **Issue**: Shared infrastructure (in public clouds) increases exposure to cyber threats.  
+   - **Impact**: Sensitive data may be vulnerable if misconfigured or attacked (e.g., data breaches).  
+   - **Example**: Capital One’s 2019 breach due to a misconfigured AWS firewall.  
+
+### Other Considerations:  
+- **Vendor Lock-in**: Migrating between providers can be complex and costly.  
+- **Hidden Costs**: Egress fees, premium support, or scaling expenses can add up.  
 
 ## Mod 2
 ### 1(a) What is Server Consolidation?
