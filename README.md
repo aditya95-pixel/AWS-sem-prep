@@ -12,7 +12,18 @@
 
 ### 1(b)    _____-as-a-Service Services provides you with a completed product that the service provider runs and manages. Give two examples of the same.
 
-Software-as-a-Service 
+Here are two common examples where the service provider delivers a fully managed, ready-to-use product:  
+
+1. **Software-as-a-Service (SaaS)**  
+   - Example: **Google Workspace (Gmail, Docs, Drive)**  
+   - The provider manages everything (infrastructure, updates, security), and users access the software via the web.  
+
+2. **Function-as-a-Service (FaaS)**  
+   - Example: **AWS Lambda**  
+   - The cloud provider fully manages the execution environment, allowing users to deploy code without handling servers.  
+
+Both eliminate the need for user-managed infrastructure, offering a turnkey solution.  
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
