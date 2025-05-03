@@ -357,6 +357,58 @@ An umbrella term for cloud service delivery models where various IT capabilities
 3. **SaaS** (Software): Salesforce, Slack
 4. **FaaS** (Function): AWS Lambda
 
+### 8(a) What is Hybrid Cloud?
+
+**Definition**:  
+An integrated cloud environment combining public cloud services with private cloud infrastructure (on-premises or hosted), allowing data and applications to be shared between them.
+
+**Key Characteristics**:
+- **Orchestration**: Uses management platforms like AWS Outposts or Azure Arc
+- **Workload Portability**: Containers/Kubernetes clusters can run across environments
+- **Example**: Running sensitive databases on-premises while using AWS EC2 for web frontends
+
+### 8(b) Distinguish between “on-site private cloud” and “outsourced private cloud”.
+
+| Feature               | On-Site Private Cloud           | Outsourced Private Cloud       |
+|-----------------------|----------------------------------|--------------------------------|
+| **Location**          | Organization's own data center   | Provider's data center         |
+| **Hardware Ownership**| Company-owned infrastructure    | Dedicated leased hardware      |
+| **Maintenance**       | Internal IT team responsible    | Provider-managed maintenance   |
+| **Example**           | VMware cluster in corporate DC  | AWS Dedicated Hosts            |
+
+### 8(c) What do you mean by Infrastructure as a Service? Give an example.
+
+**Definition**:  
+Cloud computing model providing fundamental compute, storage, and networking resources on-demand, over the internet.
+
+**Core Features**:
+- Virtualized hardware resources
+- Self-service provisioning via API/CLI
+- Pay-as-you-go pricing model
+
+**Example**:  
+AWS EC2 (Elastic Compute Cloud) - Provides resizable compute capacity with options like:
+- Instance types (t3.micro, p3.8xlarge)
+- Storage options (EBS, Instance Store)
+- Networking (VPC configuration)
+
+### 8(d)  What is the security boundary dimension of a Cloud Cube model?
+
+**Definition**:  
+Classifies cloud deployments based on their security architecture:
+
+1. **Perimeterized**  
+   - Traditional firewall-protected networks  
+   - Example: On-premises private cloud with Cisco ASA firewalls  
+
+2. **De-perimeterized**  
+   - Zero-trust security model  
+   - Example: Public cloud VPCs with security groups and IAM policies  
+
+3. **Partially Perimeterized**  
+   - Hybrid approach  
+   - Example: AWS Direct Connect with on-premises firewall + VPC security groups
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
