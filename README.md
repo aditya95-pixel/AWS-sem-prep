@@ -1291,3 +1291,39 @@ Distributed version control system tracking changes in source code during develo
 | **Security** | Hardens configurations | Open security groups |
 | **Fault Tolerance** | Increases resilience | Single-AZ RDS instances |
 | **Service Limits** | Prevents throttling | Approaching VPC limits |
+
+### 6(a) Write any two Amazon Redshift use cases. Write four Amazon Aurora features.
+
+#### Amazon Redshift Use Cases
+1. **Enterprise Data Warehousing**  
+   - Consolidate petabytes of transactional data from multiple sources  
+   - Example: Centralized sales reporting across global regions
+
+2. **BI & Analytics**  
+   - Power business dashboards with sub-second query performance  
+   - Example: Real-time customer behavior analysis using Tableau
+
+#### Amazon Aurora Features
+| Feature | Description | Benefit |
+|---------|-------------|---------|
+| **MySQL/PostgreSQL Compatibility** | Drop-in replacement for open-source DBs | Easy migration |
+| **Auto-Scaling Storage** | Grows from 10GB to 128TB automatically | No downtime for storage ops |
+| **Multi-AZ Deployments** | <30 sec failover with 15+ read replicas | High availability |
+| **Backtrack** | Rewind DB cluster to specific time | Point-in-time recovery without backups |
+
+### 6(b) Write the names of three different load balancers.
+
+#### Three Load Balancer Types
+1. **Application Load Balancer (ALB)**  
+2. **Network Load Balancer (NLB)**  
+3. **Gateway Load Balancer (GWLB)**  
+
+#### Load Balancer Selection Guide
+| Requirement | Recommended LB |
+|-------------|---------------|
+| Containerized application | ALB | 
+| Spiky TCP traffic | NLB | 
+| Multi-protocol (HTTP/HTTPS/TCP) | ALB | 
+| Static/Elastic IP support | NLB |
+| Extreme scale (millions RPS) | NLB |
+| HTTPS termination | ALB | 
