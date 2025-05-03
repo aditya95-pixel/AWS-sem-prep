@@ -119,7 +119,58 @@ Automated arrangement and coordination of cloud services to create complex workf
 **Ability to handle growing workload by adding resources**
 - Critical Advantage: Supports planned growth (e.g., database sharding)
 - Implementation Challenge: Often requires architectural changes (horizontal vs vertical)
-  
+
+### 4(a) Consider the following scenario: An educational and research organization is interested to install Cloud. The stakeholders are professors, research fellows, and students. Professors share study materials and take online exams. Research fellows execute complex algorithms. Students discuss doubts in forums. Answer the following questions: 1. Which deployment model is suitable? 2. Why have you chosen this deployment model? Explain with proper justification.
+
+**Recommended Model**: Community Cloud
+
+**Justification Matrix**:
+
+| Requirement               | Community Cloud Solution                 | Technical Advantage                              | AWS Service Reference               |
+|---------------------------|------------------------------------------|------------------------------------------------|-------------------------------------|
+| **Shared academic resources** | Dedicated IAM policies for role-based access | Centralized permission management with attribute-based controls | AWS SSO + IAM Roles |
+| **High-performance computing** | Shared GPU instances for researchers | Low-latency RDMA networking for MPI workloads | EC2 P3dn.24xlarge (8x NVIDIA V100) |
+| **Bursty exam loads**      | Auto-scaling for LMS platforms          | Machine-learning driven capacity forecasting   | ASG with Predictive Scaling Policy |
+| **Data sovereignty**       | Compliant storage for research data     | WORM (Write-Once-Read-Many) compliance         | S3 Object Lock (Governance Mode)   |
+
+### 4(b) Differentiate between the horizontal scaling and the vertical scaling policies.
+
+#### Horizontal Scaling ("Scale-out")
+- Adds more nodes to the system
+- AWS Example: Adding EC2 instances behind ALB
+- Best for: Stateless workloads (web servers)
+- Requires load balancing
+- Needs distributed architecture
+
+#### Vertical Scaling ("Scale-up")
+- Increases node capacity (CPU/RAM)
+- AWS Example: Upgrading from t3.medium to t3.xlarge
+- Best for: Monolithic apps (SQL databases)
+- Has hardware limits
+- Requires downtime
+
+### 4(c) Define the five actors in the NIST Reference model.
+
+**Cloud Consumer**
+- End-users consuming services (Students/professors in 4a scenario)
+- Technical Interface: AWS Console/CLI
+
+**Cloud Provider**
+- Delivers cloud services (AWS/Azure)
+- Core Components: Compute/Storage/Network services
+
+**Cloud Auditor**
+- Independent security assessors
+- Tools: AWS Audit Manager, PCI-DSS compliance checks
+
+**Cloud Broker**
+- Service aggregators/managers
+- Example: AWS Managed Services (AMS)
+
+**Cloud Carrier**
+- Network transit providers
+- Infrastructure: AWS Direct Connect partners
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
