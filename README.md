@@ -1327,3 +1327,28 @@ Distributed version control system tracking changes in source code during develo
 | Static/Elastic IP support | NLB |
 | Extreme scale (millions RPS) | NLB |
 | HTTPS termination | ALB | 
+
+### 7(a) Elastic Load Balancing
+**Answer**:  
+Elastic Load Balancing distributes incoming application or network traffic **across multiple targets (EC2 instances, containers, IP addresses) in one or more Availability Zones**.
+
+### 7(b)    How is Amazon CloudWatch used? Mention the four uses.
+
+1. **Monitoring**  
+   - Collects metrics (e.g., EC2 CPU utilization, Lambda invocations)
+2. **Logging**  
+   - Centralized log storage and analysis (CloudWatch Logs)
+3. **Alarming**  
+   - Triggers actions (SNS notifications, Auto Scaling) based on thresholds
+4. **Dashboards**  
+   - Custom visualization of metrics and logs
+
+### 7(c) CloudWatch Alarm Validation
+
+| Alarm Condition | Correct? | Rectification |
+|-----------------|----------|---------------|
+| `If average CPU utilization is > 60% for 5 minutes` | ✅ Valid | - |
+| `If the number of simultaneous connections is > 10 for 1 minute` | ✅ Valid | - |
+| `If the maximum bucket size in bytes is around 3 for 1 day` | ❌ Invalid | Around is not a threshold option. You must specify a threshold of >, >=, <=, or <. |
+| `If the number of healthy hosts is < 5 for 10 minutes` | ✅ Valid | - |
+| `If the volume of read operations is > 1,000 for 10 seconds…` | ❌ Invalid | You must specify a statistic (for example, average volume). |
