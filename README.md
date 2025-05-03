@@ -1150,3 +1150,52 @@ Amazon DynamoDB is a fully managed NoSQL database service.
   - Financial systems requiring strong transaction guarantees
 4. Vertical Scaling Preference
   - When you prefer scaling up single instances (vs DynamoDB's horizontal scaling)
+
+### 3(a)   Write three advantages of Google File System. Write four features of Hadoop Distributed File Systems(HDFS). Write two limitations of HDFS.
+
+#### Google File System (GFS) Advantages
+1. **Fault Tolerance**  
+   - Automatic recovery from node failures  
+   - Data replication (typically 3x) across chunkservers
+
+2. **High Throughput**  
+   - Optimized for large sequential reads  
+   - Supports concurrent appends from multiple clients
+
+3. **Scalability**  
+   - Master server manages metadata only  
+   - Chunkservers handle actual data storage
+
+#### Hadoop Distributed File System (HDFS) Features
+| Feature | Description |
+|---------|-------------|
+| **Block Storage** | Files split into 128MB/256MB blocks |
+| **Rack Awareness** | Optimizes data placement across racks |
+| **Write-Once Model** | Append-only for batch processing |
+| **Data Locality** | Computation moves to data (not vice versa) |
+
+#### HDFS Limitations
+1. **Latency Issues**  
+   - Not suitable for real-time access  
+   - High overhead for small files
+
+2. **Rigid Architecture**  
+   - Difficult to modify replication factor per file  
+   - Limited POSIX compliance
+  
+### 3(b) What do you understand by Inodes?
+
+**Definition**:  
+Data structures in Unix/Linux filesystems that store metadata about files/directories, excluding the name and actual data.
+
+**Key Attributes**:
+- File type (regular, directory, symlink)
+- Permissions (rwx for owner/group/others)
+- Ownership (UID/GID)
+- Size and timestamps
+- Pointers to data blocks
+
+
+**Significance**:
+- Enables fast file access without scanning directories
+- Allows hard links (multiple directory entries pointing to same inode)
