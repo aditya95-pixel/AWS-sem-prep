@@ -1047,3 +1047,56 @@ The best and most cost-effective solution for storing data that is **not frequen
    → For development/testing, consider serverless options like Aurora Serverless v2
 
 ### 1(b)    What do you pay for when you use On-Demand Instances of RDS?What is the case for reserved instances?
+
+#### On-Demand Instances
+
+**What You Pay For**:
+1. **Compute Capacity**  
+   - Charged per second/hour for database instance types (e.g., db.m5.large)
+   - Scales linearly with vCPUs and memory allocation
+
+2. **Storage**  
+   - Provisioned storage (GB/month) for database files
+   - Additional costs for:
+     - IOPS (for performance-optimized storage)
+     - Storage autoscaling beyond allocated capacity
+
+3. **Data Transfer**  
+   - Outbound traffic to internet/other regions
+   - Inter-AZ replication traffic (for Multi-AZ deployments)
+
+4. **Backups**  
+   - Automated backups within retention period
+   - Snapshots beyond free tier allowance
+
+5. **Additional Features**  
+   - Database engine licensing (for Oracle/SQL Server)
+   - Monitoring/advanced security options
+
+**Characteristics**:
+- **No upfront commitment**
+- **Flexible** - Can modify/terminate anytime
+- **Best for**: Unpredictable workloads, short-term projects
+
+#### Reserved Instances 
+
+#### Core Concept:
+A long-term commitment (1-3 years) that provides:
+- Significant discount (vs On-Demand)
+- Capacity reservation (optional)
+
+#### Key Considerations:
+
+1. **Commitment Types**  
+   - **Standard RIs**: Fixed configuration for steady-state workloads
+   - **Convertible RIs**: Allows instance family upgrades during term
+
+2. **Payment Options**  
+   - All Upfront (max discount)
+   - Partial Upfront
+   - No Upfront (lowest discount)
+
+3. **Best Use Cases**:
+   - Production databases with predictable usage
+   - Applications with consistent baseline load
+   - Budget-conscious organizations able to forecast needs
