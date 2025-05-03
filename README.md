@@ -1352,3 +1352,52 @@ Elastic Load Balancing distributes incoming application or network traffic **acr
 | `If the maximum bucket size in bytes is around 3 for 1 day` | ❌ Invalid | Around is not a threshold option. You must specify a threshold of >, >=, <=, or <. |
 | `If the number of healthy hosts is < 5 for 10 minutes` | ✅ Valid | - |
 | `If the volume of read operations is > 1,000 for 10 seconds…` | ❌ Invalid | You must specify a statistic (for example, average volume). |
+
+### 8(a) Why is auto-scaling important? What is auto-scaling group?
+
+- **Cost Efficiency**: Scales down during low traffic (e.g., nightly)
+- **Fault Tolerance**: Replaces unhealthy instances automatically
+- **Performance**: Maintains responsiveness during traffic spikes (e.g., Black Friday sales)
+
+An **Auto Scaling Group** is an AWS service that automatically manages a fleet of EC2 instances to:
+- Maintain **desired capacity**
+- Scale **out/in** based on demand
+- Replace **unhealthy instances**
+- Distribute across **Availability Zones**
+
+### 8(b) Which service would you use to send alerts based on Amazon CloudWatch alarms?
+
+**Amazon SNS** (Simple Notification Service) sends alerts from CloudWatch alarms via:
+- Email/SMS
+- Lambda functions
+- HTTP/S webhooks
+
+### 8(c) What is the difference between scaling up and scaling out?
+
+| Aspect                | Scaling Up (Vertical)                          | Scaling Out (Horizontal)                 |
+|-----------------------|-----------------------------------------------|------------------------------------------|
+| **Resource Change**   | Upgrades instance size (`m5.large` → `m5.xlarge`) | Adds more identical instances           |
+| **Downtime**          | Requires instance reboot                      | No downtime (load balancer integration) |
+| **AWS Service**       | RDS Instance Class Modification               | Auto Scaling Group + Elastic Load Balancer |
+| **Architectural Impact** | Single point of scaling                   | Distributed system design               |
+| **Cost Pattern**      | $$ (Exponential cost growth)                 | $ (Linear cost growth)                  |
+| **Failure Domain**    | Larger (single instance)                     | Smaller (per-instance)                  |
+| **Best For**          | Monolithic apps (SQL databases)               | Stateless services (web servers)        |
+
+### 8(d) Amazon CloudWatch, Amazon EC2 Auto Scaling, and Elastic Load Balancing work well individually. Can you explain the statement with a proper example?
+
+#### Example: E-Commerce Flash Sale
+
+#### 1. Traffic Spike Scenario
+
+| Service          | Role During Spike               | Action                                  |
+|------------------|---------------------------------|-----------------------------------------|
+| **CloudWatch**   | Detects CPU > 70% for 5 mins    | Triggers scale-out alarm                |
+| **Auto Scaling** | Receives alarm                  | Launches 5 new EC2 instances            |
+| **ELB**          | Health checks new instances     | Distributes traffic across all 7 nodes  |
+
+#### 2. Post-Spike Scale-In
+
+| Time   | CloudWatch Metric | Auto Scaling Action      | ELB Impact                         |
+|--------|-------------------|--------------------------|------------------------------------|
+| 02:00  | CPU drops to 30%  | Terminates 3 instances   | Seamlessly drains connections      |
