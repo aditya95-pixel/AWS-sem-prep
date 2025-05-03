@@ -304,6 +304,59 @@ A contractual guarantee defining minimum service quality standards between provi
    - Traditional: Manual DR setups requiring duplicate hardware  
    - Recovery: Cloud offers RTO <15min vs traditional 24+ hours
   
+### 7(a) Discuss the roles of the following actors of the NIST Reference model: i) Cloud Consumer ii) Cloud Broker
+
+**Cloud Consumer**
+- End-users consuming services (Students/professors in 4a scenario)
+- Technical Interface: AWS Console/CLI
+
+**Cloud Broker**
+- Service aggregators/managers
+- Example: AWS Managed Services (AMS)
+
+### 7(b) What is meant by the private cloud and the public cloud deployment models? Discuss one advantage and one disadvantage of each of them.
+
+### Private Cloud
+**Definition**:  
+A cloud environment dedicated to a single organization, hosted either on-premises or by a third-party provider.
+
+**Characteristics**:
+- Single-tenant architecture
+- Full control over infrastructure
+- Example: VMware Cloud Foundation on AWS Outposts
+
+**Advantage**:  
+✅ **Enhanced Security** - Complete isolation of sensitive data (e.g., HIPAA-compliant healthcare systems)
+
+**Disadvantage**:  
+❌ **High Cost** - Requires capital expenditure for hardware and specialized IT staff
+
+### Public Cloud
+**Definition**:  
+Shared infrastructure provided by third-party vendors over the public internet.
+
+**Characteristics**:
+- Multi-tenant architecture
+- Pay-as-you-go pricing
+- Example: AWS EC2 instances in us-east-1 region
+
+**Advantage**:  
+✅ **Cost Efficiency** - No upfront investment, only pay for resources used (e.g., startups can begin with $0 upfront)
+
+**Disadvantage**:  
+❌ **Limited Customization** - Must conform to provider's service constraints (e.g., AWS EC2 instance types)
+
+### 7(c)  What is XaaS?
+
+**Definition**:  
+An umbrella term for cloud service delivery models where various IT capabilities are provided as on-demand services.
+
+**Common Types**:
+1. **IaaS** (Infrastructure): AWS EC2, Azure VMs
+2. **PaaS** (Platform): Heroku, AWS Elastic Beanstalk
+3. **SaaS** (Software): Salesforce, Slack
+4. **FaaS** (Function): AWS Lambda
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
