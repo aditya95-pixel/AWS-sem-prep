@@ -171,6 +171,68 @@ Automated arrangement and coordination of cloud services to create complex workf
 - Network transit providers
 - Infrastructure: AWS Direct Connect partners
 
+### 5(a) Explain “Multi-tenancy” and “Rapid provisioning” in Cloud Computing.
+**Multi-tenancy**
+```mermaid
+graph TD
+    A[Physical Server] --> B[Hypervisor]
+    B --> C[Tenant 1 VM]
+    B --> D[Tenant 2 VM]
+    B --> E[Tenant N VM]
+```
+**Definition**: Architectural pattern where single instance serves multiple customers ("tenants")
+
+**Key Characteristics**: Resource isolation through logical separation (not physical)
+
+**AWS Example** : Amazon RDS multi-tenant DB instances
+
+**Advantage** : Cost efficiency through shared infrastructure
+
+**Rapid Provisioning** refers to the cloud's ability to deploy compute/storage/network resources **on-demand within minutes or seconds**, compared to traditional IT's weeks-long procurement cycles.
+
+#### Technical Enablers of Rapid Provisioning
+
+| Technology                      | Role                                   | AWS Example                          |
+|---------------------------------|----------------------------------------|--------------------------------------|
+| **Infrastructure-as-Code (IaC)** | Declarative template-based deployment  | AWS CloudFormation<br>Terraform AWS Provider| 
+| **Virtualization**              | Hardware abstraction via hypervisor    | EC2 Nitro System<br>(NVMe SSD + SR-IOV networking)| 
+| **Containerization**            | OS-level virtualization                | ECS Fargate<br>EKS with Firecracker |
+| **APIs**                        | Programmatic resource control          | AWS SDK (boto3)<br>AWS CLI (v2)     |
+
+### 5(b)    What do the internal and external dimensions of the Cloud Cube model signify?
+
+## Cloud Cube Model: Internal vs External Dimensions
+
+| Dimension        | Internal (On-Premises)                | External (Public Cloud)               |
+|------------------|---------------------------------------|---------------------------------------|
+| **Scope**        | Private data centers                  | AWS/GCP/Azure regions                 |
+| **Control**      | Full root access                      | Limited by CSP APIs/SLAs              |
+| **Networking**   | Customer-managed routers/switches     | AWS Direct Connect/VPC                |
+| **Security**     | On-prem firewalls (Palo Alto)         | AWS Shield Advanced + WAF             |
+| **Compliance**   | Self-audited                          | Shared responsibility model           |
+| **Latency**      | <1ms (LAN)                           | 5-100ms (Internet/VPN)                |
+
+### 5(c)  What is a middleware layer? In the Cloud, who uses the middleware layer? Who installs or manages the middleware layer in the Cloud?
+
+**Definition**: Software glue between OS and applications
+
+**Provides services like**:
+- Authentication
+- Messaging
+- API mediation 
+
+**Users**:
+- Application Developers: Utilize middleware services via APIs
+- DevOps Engineers: Configure middleware through IaC
+
+**Management**:
+
+| Deployment Model	| Responsibility Party |
+|-------------------|----------------------|
+| IaaS	| Customer-managed |
+| PaaS	| Shared responsibility |	
+| SaaS	| Provider-managed |
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
