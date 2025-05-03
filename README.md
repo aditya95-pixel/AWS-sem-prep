@@ -1100,3 +1100,53 @@ A long-term commitment (1-3 years) that provides:
    - Production databases with predictable usage
    - Applications with consistent baseline load
    - Budget-conscious organizations able to forecast needs
+
+### 2(a)   DynamoDB supports two different kinds of primary keys. What are those and what are their significances?
+
+#### 1. **Partition Key (Simple Primary Key)**
+   - **Structure**: Single attribute (e.g., `UserID`)
+   - **Significance**:
+     - Determines data distribution across partitions
+     - Enables direct point queries (`getItem`)
+
+#### 2. **Composite Key (Partition + Sort Key)**
+   - **Structure**: Two attributes (e.g., `UserID:OrderID`)
+   - **Significance**:
+     - Enables rich query patterns (`query` operation)
+     - Allows sorting within partitions
+     - Supports hierarchical relationships
+
+**Example Patterns**:
+```json
+// Simple Key
+{ "CustomerID": "123" }
+
+// Composite Key
+{ "UserID": "123", "OrderDate": "2023-01-01" }
+```
+
+### 2(b) DynamoDB runs exclusively on _______.
+
+DynamoDB runs exclusively on **SSD-backed storage** with automatic partitioning across multiple availability zones.
+
+### 2(c) Fill up the following table:
+
+What are my requirements? Solution
+
+Enterprise-class relational database **Amazon RDS (PostgreSQL/MySQL)**
+
+Fast and flexible NoSQL database service for any scale **Amazon DynamoDB**
+
+### 2(d)  Which is a fully managed NoSQL database service? Write four cases of when to use Amazon RDS.
+
+Amazon DynamoDB is a fully managed NoSQL database service.
+
+**When to Use Amazon RDS**:
+1. Structured Data with Complex Joins
+  - When your application requires SQL queries with multiple table joins
+2. Existing Application Migration
+  - For lift-and-shift of traditional RDBMS applications
+3. ACID Compliance Needs
+  - Financial systems requiring strong transaction guarantees
+4. Vertical Scaling Preference
+  - When you prefer scaling up single instances (vs DynamoDB's horizontal scaling)
