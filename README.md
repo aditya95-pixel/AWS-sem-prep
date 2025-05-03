@@ -1199,3 +1199,49 @@ Data structures in Unix/Linux filesystems that store metadata about files/direct
 **Significance**:
 - Enables fast file access without scanning directories
 - Allows hard links (multiple directory entries pointing to same inode)
+
+### 4(a) What is AWS CodeCommit? Who should use it? What is Git?
+
+**Definition**:  
+AWS's fully-managed source control service that hosts secure Git-based repositories.
+
+**Key Features**:
+- Private Git repositories with no size limits
+- Integration with AWS CI/CD tools (CodePipeline, CodeBuild)
+- IAM-based access control
+- Encrypted at rest (AWS KMS) and in transit
+
+**Ideal Users**:
+- DevOps teams needing AWS-integrated version control
+- Enterprises requiring audit trails via AWS CloudTrail
+- Projects needing scalable Git hosting without server management
+
+#### Git
+**Definition**:  
+Distributed version control system tracking changes in source code during development.
+
+### 4(b) Replication causes data redundancy then why is it still preferred in HDFS?
+
+1. Fault Tolerance
+  - 3x replication ensures data survives 2 simultaneous node failures
+  - Automatic re-replication when nodes go down
+
+2. Data Locality
+  - Multiple copies enable MapReduce to find nearest data copy
+  - Minimizes network transfer during computation
+
+3. Read Scalability
+  - Clients can read from nearest replica
+  - Parallel reads from multiple replicas possible
+
+### 4(c) Write three differences between GFS and HDFS.
+
+| Characteristic       | Google File System (GFS)               | Hadoop DFS (HDFS)                     |
+|----------------------|----------------------------------------|---------------------------------------|
+| **Design Origin**    | Built for Google's web crawling        | Open-source implementation of GFS     |
+| **Chunk Size**       | 64MB (later 256MB)                    | 128MB (default, configurable)         |
+| **Write Model**      | Record append operations              | Strict write-once model               |
+| **Master Node**      | Single master with shadow             | Supports NameNode HA with standby     |
+| **Client Caching**   | No client-side caching                | Supports client-side read caching     |
+| **Data Mutation**    | Allows random writes                  | Append-only (without HDFS-265)       |
+| **Target Workload**  | High-throughput web indexing          | Batch processing (MapReduce)         |
