@@ -1245,3 +1245,49 @@ Distributed version control system tracking changes in source code during develo
 | **Client Caching**   | No client-side caching                | Supports client-side read caching     |
 | **Data Mutation**    | Allows random writes                  | Append-only (without HDFS-265)       |
 | **Target Workload**  | High-throughput web indexing          | Batch processing (MapReduce)         |
+
+### 5(a) What are the six pillars of AWS well-architected framework? Explain any three of them.
+
+#### The Six Pillars:
+1. **Operational Excellence**
+2. **Security**
+3. **Reliability**
+4. **Performance Efficiency**
+5. **Cost Optimization**
+6. **Sustainability**
+
+#### Three Pillars Explained:
+
+#### 1. Operational Excellence
+**Focus**: Running and monitoring systems to deliver business value  
+**Key Practices**:
+- Infrastructure as Code (AWS CloudFormation)
+- Automated testing and deployments (AWS CodePipeline)
+- Operational metrics dashboards (Amazon CloudWatch)
+
+#### 2. Security
+**Focus**: Protecting data and systems  
+**Key Practices**:
+- Least privilege access (IAM policies)
+- Encryption at rest (AWS KMS) and in transit (TLS)
+- Threat detection (Amazon GuardDuty)
+
+#### 3. Cost Optimization
+**Focus**: Avoiding unnecessary costs  
+**Key Practices**:
+- Right-sizing resources (AWS Compute Optimizer)
+- Reserved Instances for steady workloads
+- Auto-scaling for variable demand
+
+### 5(b) What does AWS trusted advisor provide?
+
+**Purpose**: Provides real-time guidance to improve AWS infrastructure  
+
+#### Key Features:
+| Feature | Description | Example Checks |
+|---------|-------------|----------------|
+| **Cost Optimization** | Identifies wasteful spending | Underutilized EC2 instances |
+| **Performance** | Improves service speed | High-latency API Gateway routes |
+| **Security** | Hardens configurations | Open security groups |
+| **Fault Tolerance** | Increases resilience | Single-AZ RDS instances |
+| **Service Limits** | Prevents throttling | Approaching VPC limits |
