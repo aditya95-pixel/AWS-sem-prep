@@ -233,6 +233,77 @@ graph TD
 | PaaS	| Shared responsibility |	
 | SaaS	| Provider-managed |
 
+### 6(a) “Cloud Computing has evolved from mainframe, cluster computing, and grid computing and has features of each of these three technologies”---Comment on this statement.
+
+Ans. 
+**Mainframes:**
+- These were the first examples of large computational facilities leveraging multiple processing units specialized for large data movement and massive input/output (I/O) operations.
+- A supercomputer is designed for high-speed calculations and complex scientific computations, prioritizing raw processing power.
+
+**Cluster Computing:**
+- Cluster computing started as a low-cost alternative to the use of mainframes and supercomputers.
+- One of the attractive features of clusters was that the computational power of commodity machines could be leveraged to solve problems that were previously manageable only on expensive supercomputers.
+
+**Grid Computing**
+- Grids were initially developed as aggregations of geographically dispersed clusters using Internet connections.
+- These clusters belonged to different organizations, and arrangements were made among them to share the computational power. This is an analogy to the power grid.
+
+**Cloud Computing**
+- Computing clouds are deployed in large data centers hosted by a single organization that provides services to others.
+- Clouds are characterized by the fact of having virtually infinite capacity, being tolerant to failures, and being always on, as in the case of mainframes.
+- In many cases, the computing nodes that form the infrastructure of computing clouds are commodity machines, as in the case of clusters.
+- The services made available by a cloud vendor are consumed on a pay-per-use basis, and clouds fully implement the utility vision introduced by grid computing.
+
+### 6(b) What is “Resource pooling” in Cloud?
+**Definition**:  
+A multi-tenant architecture where cloud providers serve multiple customers from shared physical resources while maintaining logical isolation.
+
+**Key Characteristics**:
+- **Dynamic Allocation**: Resources assigned on-demand (e.g., AWS EC2 Fleet)
+- **Location Independence**: Users unaware of physical resource locations (AWS Availability Zones)
+- **Economies of Scale**: Reduced costs through massive infrastructure sharing
+
+**Technical Implementation**:
+- AWS Example: Multi-AZ RDS instances sharing underlying storage pools
+- Isolation Mechanism: Hypervisor-level security (AWS Nitro System)
+
+### 6(c) What is a SLA? Mention at least three parameters usually specified in a SLA.
+**Definition**:  
+A contractual guarantee defining minimum service quality standards between provider and customer.
+
+**Top 3 SLA Parameters**:
+
+1. **Uptime Percentage**  
+   - AWS EC2: 99.99% availability (~53 minutes downtime/year max)
+   - Calculation: `(Available Minutes - Downtime) / Total Minutes`
+
+2. **Performance Thresholds**  
+   - Example: Azure Blob Storage <500ms GET/PUT latency 99.9% of time
+
+3. **Support Response Times**  
+   - AWS Business Support: <1 hour for critical issues
+
+**SLA Enforcement**:
+- Service credits for violations (typically 10-30% discount)
+- Exclusions: Scheduled maintenance, force majeure events
+
+### 6(d) Mention any three advantages of Cloud Computing over the traditional IT environment.
+
+1. **Elastic Scalability**  
+   - Cloud: Spin up 1000 EC2 instances in 10 minutes  
+   - Traditional: 6-8 weeks for hardware procurement  
+   - AWS Tech: Auto Scaling Groups with predictive scaling
+
+2. **Cost Efficiency**  
+   - Cloud: Pay-per-use (e.g., Lambda @ $0.00001667/GB-s)  
+   - Traditional: 15-20% average server utilization  
+   - Savings: 30-40% TCO reduction (Gartner)
+
+3. **Operational Resilience**  
+   - Cloud: Built-in multi-AZ redundancy (AWS RDS)  
+   - Traditional: Manual DR setups requiring duplicate hardware  
+   - Recovery: Cloud offers RTO <15min vs traditional 24+ hours
+  
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
@@ -846,27 +917,3 @@ The best and most cost-effective solution for storing data that is **not frequen
 - **No Infrastructure Management:** AWS handles scaling, maintenance, and durability.
 - **Automatic Redundancy:** Data is replicated across multiple Availability Zones.
 - **Security & Compliance:** Built-in encryption, access controls, and compliance with regulations.
-
-
-## Miscellaneous
-
-### “Cloud Computing has evolved from mainframe, cluster computing, and grid computing and has features of each of these three technologies”---Comment on this statement.
-
-Ans. 
-**Mainframes:**
-- These were the first examples of large computational facilities leveraging multiple processing units specialized for large data movement and massive input/output (I/O) operations.
-- A supercomputer is designed for high-speed calculations and complex scientific computations, prioritizing raw processing power.
-
-**Cluster Computing:**
-- Cluster computing started as a low-cost alternative to the use of mainframes and supercomputers.
-- One of the attractive features of clusters was that the computational power of commodity machines could be leveraged to solve problems that were previously manageable only on expensive supercomputers.
-
-**Grid Computing**
-- Grids were initially developed as aggregations of geographically dispersed clusters using Internet connections.
-- These clusters belonged to different organizations, and arrangements were made among them to share the computational power. This is an analogy to the power grid.
-
-**Cloud Computing**
-- Computing clouds are deployed in large data centers hosted by a single organization that provides services to others.
-- Clouds are characterized by the fact of having virtually infinite capacity, being tolerant to failures, and being always on, as in the case of mainframes.
-- In many cases, the computing nodes that form the infrastructure of computing clouds are commodity machines, as in the case of clusters.
-- The services made available by a cloud vendor are consumed on a pay-per-use basis, and clouds fully implement the utility vision introduced by grid computing.
