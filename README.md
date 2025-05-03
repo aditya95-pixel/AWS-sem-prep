@@ -29,7 +29,51 @@ The **Cloud Cube Model** (Jericho Forum) defines four dimensions, including:
 
 - **Vendor Lock-in** – Dependency on a provider’s proprietary tools makes migration difficult.  
 - **Security Risks** – Misconfigurations (e.g., exposed S3 buckets) can lead to data breaches.
-  
+
+### 2. (a)   What is meant by Vendor Lock-In? Which service model is most affected by it?
+
+**Vendor Lock-In** refers to the difficulty in migrating from one cloud provider to another due to:
+- Proprietary technologies/APIs
+- Unique service implementations
+- Data format dependencies
+
+**Most Affected Service Model:**  
+**Platform-as-a-Service (PaaS)** is most susceptible because:
+- Applications are built using provider-specific tools
+- Middleware and runtime environments are provider-controlled
+- Example: Migrating from AWS Elastic Beanstalk to Azure App Service requires significant rework
+
+### 2(b)    What are the five main features or attributes of Cloud Computing according to the NIST model?
+
+The **NIST SP 800-145** defines cloud computing essentials:
+
+1. **On-Demand Self-Service**  
+   - Users can provision resources automatically (e.g., spinning up EC2 instances)
+
+2. **Broad Network Access**  
+   - Services available over standard networks (HTTP/APIs) from any device
+
+3. **Resource Pooling**  
+   - Multi-tenant architecture with shared physical resources (e.g., AWS hypervisors)
+
+4. **Rapid Elasticity**  
+   - Auto-scaling capabilities (e.g., AWS Lambda scaling to thousands of instances)
+
+5. **Measured Service**  
+   - Pay-per-use billing models (e.g., AWS charging per GB-hour for Lambda)
+
+### 2(c)  Explain service orchestration in Cloud Computing.
+
+**Definition:**  
+Automated arrangement and coordination of cloud services to create complex workflows.
+
+**Key Aspects:**  
+| Component | Description | Example |
+|-----------|-------------|---------|
+| **Workflow Automation** | Sequencing tasks across services | AWS Step Functions |
+| **Dependency Management** | Handling service interdependencies | Terraform resource chaining |
+| **Lifecycle Control** | Managing creation→scaling→termination | Kubernetes Pod lifecycle |
+
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
