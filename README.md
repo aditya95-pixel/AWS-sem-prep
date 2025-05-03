@@ -74,6 +74,52 @@ Automated arrangement and coordination of cloud services to create complex workf
 | **Dependency Management** | Handling service interdependencies | Terraform resource chaining |
 | **Lifecycle Control** | Managing creation→scaling→termination | Kubernetes Pod lifecycle |
 
+### 3(a)Explain “Pay as you go” and “Measured service” in Cloud computing.
+
+| Concept | Definition | Technical Implementation | AWS Example |
+|---------|------------|--------------------------|-------------|
+| **Pay as you go** | Payment model where costs align with actual usage | - Per-second billing <br> - No upfront commitments | EC2 instances billed per second after first minute |
+| **Measured Service** | Resource usage is monitored and reported transparently | - CloudWatch metrics <br> - Cost Explorer APIs | S3 storage metrics (GB-months) in Cost & Usage Reports |
+
+**Key Difference:**  
+- Pay as you go = **Billing model**  
+- Measured service = **Monitoring capability** that enables pay-as-you-go
+
+### 3(b) What is the Cloud Cube model? Mention the four dimensions of the Cloud Cube model.
+
+![alt text](https://github.com/aditya95-pixel/AWS-sem-prep/blob/main/cloudcube.png?raw=true)
+
+#### Four Dimensions Explained:
+**Ownership**
+- Proprietary (Private cloud)
+- Outsourced (Public cloud)
+- Joint (Community cloud)
+
+**Location**
+- Internal (On-premises)
+- External (Provider datacenters)
+- Mixed (Hybrid cloud)
+
+**Security Boundary**
+- Perimeterized (Traditional firewall)
+- De-perimeterized (Zero-trust models)
+
+**Sourcing**
+- Insourced (Self-managed)
+- Outsourced (Third-party managed)
+
+### 3(c)  Critically comment on the terms “Elasticity” and “Scalability” with respect to Cloud Computing.
+
+#### Elasticity:
+**Automated scaling based on workload fluctuations**
+- Critical Advantage: Handles unpredictable bursts (e.g., Black Friday traffic)
+- Implementation Challenge: Requires proper auto-scaling policies to avoid thrashing
+
+#### Scalability:
+**Ability to handle growing workload by adding resources**
+- Critical Advantage: Supports planned growth (e.g., database sharding)
+- Implementation Challenge: Often requires architectural changes (horizontal vs vertical)
+  
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
