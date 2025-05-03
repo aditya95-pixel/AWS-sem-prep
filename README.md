@@ -1,5 +1,35 @@
 # AWS Semester preparation
 ## Mod 1
+### 1. (a) Write two advantages of perceiving infrastructure as software in the Cloud environment rather than as hardware in the traditional IT environment.
+
+ **Scalability & Elasticity** – Cloud infrastructure can be dynamically scaled via software (e.g., AWS Auto Scaling), unlike physical hardware upgrades.  
+**Automation & Speed** – Infrastructure-as-Code (IaC) tools (e.g., AWS CloudFormation) enable fast, repeatable deployments with fewer manual errors.  
+
+### 1(b)    _____-as-a-Service Services provides you with a completed product that the service provider runs and manages. Give two examples of the same.
+
+**Software-as-a-Service (SaaS)**  
+**Examples:**  
+- **Salesforce** (Cloud-based CRM managed by Salesforce).  
+- **Microsoft 365** (Productivity suite managed by Microsoft).
+  
+### 1(c)  A community cloud serves a group of Cloud Consumers with shared concerns such as _______, rather than serving a single organization as does a private cloud.
+
+**Regulatory compliance, security policies, or industry standards** (e.g., banks sharing a **PCI-DSS compliant** cloud).
+
+### 1(d) Describe the ownership dimension of the cloud cube model.
+
+The **Cloud Cube Model** (Jericho Forum) defines four dimensions, including:  
+| Ownership Type | Description | Example |  
+|--------------|------------|---------|  
+| **Proprietary** | Owned by a single entity | Private Cloud |  
+| **Outsourced** | Owned by a third party | Public Cloud (AWS, Azure) |  
+| **Joint Ownership** | Shared by multiple entities | Community Cloud |  
+
+### 1(e) Write two disadvantages of using cloud computing.
+
+- **Vendor Lock-in** – Dependency on a provider’s proprietary tools makes migration difficult.  
+- **Security Risks** – Misconfigurations (e.g., exposed S3 buckets) can lead to data breaches.
+  
 ## Mod 2
 ### 1(a) What is Server Consolidation?
 
