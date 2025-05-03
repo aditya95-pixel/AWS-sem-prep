@@ -1022,3 +1022,28 @@ The best and most cost-effective solution for storing data that is **not frequen
 - **No Infrastructure Management:** AWS handles scaling, maintenance, and durability.
 - **Automatic Redundancy:** Data is replicated across multiple Availability Zones.
 - **Security & Compliance:** Built-in encryption, access controls, and compliance with regulations.
+
+## Mod 4
+
+### 1(a) What are the functionalities of Amazon RDS read replicas?  Write four cases of when not to use Amazon RDS?
+
+#### Functionalities:
+1. **Read Scaling** - Distribute read workloads across multiple replicas
+2. **Cross-Region Replication** - Disaster recovery preparation (e.g., primary in us-east-1, replica in eu-west-1)
+3. **Promotion Capability** - Convert replica to standalone DB instance during outages
+4. **Engine Support** - Available for MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server
+
+#### When NOT to use RDS (4 Cases):
+1. **Microsecond Latency Needs**  
+   → Use Amazon Aurora or self-managed DBs on EC2
+
+2. **Specialized DB Requirements**  
+   → When needing NoSQL (use DynamoDB) or graph databases (use Neptune)
+
+3. **Complete OS/DB Control**  
+   → When requiring root access or custom DB configurations
+
+4. **Cost-Sensitive Small Workloads**  
+   → For development/testing, consider serverless options like Aurora Serverless v2
+
+### 1(b)    What do you pay for when you use On-Demand Instances of RDS?What is the case for reserved instances?
