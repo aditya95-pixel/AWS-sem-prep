@@ -1,4 +1,67 @@
 # AWS Semester preparation
+
+## MCQS
+### Which AWS service is used to launch and manage virtual servers in the cloud?
+- Amazon EC2
+
+### What does the "R" stand for in the AWS service "Amazon RDS"?
+- Relational
+
+### Which AWS service can be used to distribute content globally and improve website performance?
+- Amazon CloudFront
+
+### What does the acronym "IAM" stand for in AWS?
+- Identity and Access Management
+
+### What AWS service is used to create and manage virtual private networks (VPNs) in the cloud?
+- Amazon VPC
+
+### Which AWS service can be used to automatically scale EC2 instances based on demand?
+- Amazon EC2 Auto Scaling
+
+### What is the purpose of AWS Lambda?
+- Running code without provisioning or managing servers
+
+### Which AWS service provides a scalable, fully managed NoSQL database?
+- Amazon DynamoDB
+
+### What AWS service can be used to monitor and gain insights into application performance?
+- AWS CloudWatch
+
+### Which AWS service can be used to manage and monitor containerized applications?
+- Amazon ECS (or Amazon EKS for Kubernetes)
+
+### What is the purpose of AWS CloudFront?
+- Delivering content to users with low latency from edge locations
+
+### What is the region in AWS?
+- A region is a geographical area or collection of data centers.
+
+### What does S3 stand for in AWS?
+- Simple Storage Service
+
+### How many types of storage classes does the S3 contain?
+- **6** (Standard, Intelligent-Tiering, Standard-IA, One Zone-IA, Glacier Instant Retrieval, Glacier Flexible Retrieval, Glacier Deep Archive, S3 Outposts)
+
+
+### Among all S3 storage classes, which storage class is used for data that is rarely accessed but requires rapid response when needed?
+- **S3 Standard-IA (Infrequent Access)**
+
+### In the VMware full virtualization model, the hypervisor is in Ring 
+- **0**
+
+### A hypervisor recreates a hardware environment in which ____ operating systems are installed.
+- **virtual**
+
+### ______ is a cloud computing infrastructure that creates a development environment upon which applications may be built.
+- **Platform as a Service (PaaS)**
+
+### ______ cloud is one where the cloud has been organized to serve a common function or purpose.
+- **Community**
+
+### Cloud computing is a _____ system and it is necessarily unidirectional in nature.
+- **stateless**
+
 ## Mod 1
 ### 1. (a) Write two advantages of perceiving infrastructure as software in the Cloud environment rather than as hardware in the traditional IT environment.
 
